@@ -10,5 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "repository": "git@github.com:ArmandoKatito10/Learning_nodeJs.git"
 }

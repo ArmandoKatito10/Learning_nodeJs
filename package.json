@@ -9,7 +9,8 @@
   "author": "Armando",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
   },
   "repository": "git@github.com:ArmandoKatito10/Learning_nodeJs.git"
 }

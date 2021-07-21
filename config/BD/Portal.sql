@@ -10,4 +10,4 @@ default collate utf8_general_ci;
  )CHARSET = utf8;
  INSERT INTO noticias VALUES ()
 
- INSERT INTO noticias(titulo,noticia)VALUES('Título da Notícia','Notícia em si');
+ INSERT INTO noticias(titulo,noticia)VALUES('Título da Notícia','Notícia em si'); 

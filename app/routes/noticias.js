@@ -17,7 +17,7 @@ module.exports = function (app) {
 				throw error;
 			}
 			//console.log(result)
-			res.send(result);
+			res.render("noticias/noticias", {noticias : result});
 		});
 	});
 

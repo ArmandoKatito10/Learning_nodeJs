@@ -15,6 +15,6 @@ module.exports = function (app) {
 			//console.log(result)
 			res.render("noticias/noticia", {noticia : result});
 		});
-	});
+	}); 
 
 };

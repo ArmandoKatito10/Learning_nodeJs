@@ -3,20 +3,18 @@ module.exports = function (app) {
 
 
 	// criando rotas para arquivos HTML esternos
-	app.get('/noticias', function (req, res) {
+	app.get('/noticia', function (req, res) {
 		var connection = app.config.dbConnection();
 		var noticiasModel = app.app.models.noticiasModel;
-
 		//console.log(connection)
-		noticiasModel.getNoticias(connection, function (error, result){
+
+		noticiasModel.getNoticia(connection, function (error, result) {
 			if(error){
 				throw error;
 			}
-			//console.log(result);
-			res.render("noticias/noticias", {noticias : result});
+			//console.log(result)
+			res.render("noticias/noticia", {noticia : result});
 		});
 	});
 
 };
-   // res.render("noticias/noticias");
-

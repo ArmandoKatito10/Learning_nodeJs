@@ -8,13 +8,11 @@ module.exports = function(app){
     //res.send(noticias);
 
         var connection = app.config.dbConnection();
-		var noticiasModel = app.app.models.noticiasModel;
+		var noticiasModel = new app.app.models.noticiasModels(connection);
 		//console.log(connection)
 
 
-
-
-		noticiasModel.salvarNoticias(noticia,connection, function (error, result) {
+		noticiasModel.salvarNoticias(noticia, function (error, result) {
 			if(error){ 
 				throw error;
 			}
